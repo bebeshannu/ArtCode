@@ -1,0 +1,100 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>Echoes of Memory</title><link rel="stylesheet" href="src/style.css"></head>
+<body>
+<div id="preIntro"><p id="preQuote">They say the dead die twice —<br>once when the breath leaves them,<br>and once when the last voice that remembers them falls silent.</p></div>
+<audio id="menuAmbient" loop></audio>
+<div id="intro"><div class="intro-inner"><div class="eyebrow">DRESDEN · 12 FEBRUARY 1995</div><h1>ECHOES<br>OF MEMORY</h1><p class="quote">“What remains when a sound disappears?”</p><button id="enter">ENTER</button></div></div>
+<header><div><b>ECHOES OF MEMORY</b><small>DRESDEN BELL REQUIEM · 1995</small></div><nav><button id="themeToggle" title="Toggle light/dark theme">☾</button><button id="menuBtn">☰ MENU</button></nav></header>
+<main>
+
+<section id="mainMenu" class="view menu">
+  <div class="menu-inner">
+    <div class="eyebrow">48 VOICES · ONE CITY</div>
+    <h1>ECHOES OF MEMORY</h1>
+    <nav class="menu-nav">
+      <button data-view="experience" class="menu-item featured"><span class="menu-item-title">Enter the Visualization</span><span class="menu-item-sub">Touch a light. Hear one memory.</span></button>
+      <button data-view="historyPage" class="menu-item"><span class="menu-item-title">History</span><span class="menu-item-sub">Dresden, February 1945</span></button>
+      <button data-view="storyPage" class="menu-item"><span class="menu-item-title">The Story</span><span class="menu-item-sub">Johannes Wallmann &amp; the Glockenrequiem</span></button>
+      <button data-view="moreInfoPage" class="menu-item"><span class="menu-item-title">More Info</span><span class="menu-item-sub">Why this installation, this way</span></button>
+      <button data-view="contactPage" class="menu-item"><span class="menu-item-title">Contact &amp; Support</span><span class="menu-item-sub">Organizations helping now</span></button>
+    </nav>
+  </div>
+</section>
+
+<section id="experience" class="view">
+  <div id="scene">
+    <canvas id="art"></canvas>
+    <div id="veil"></div>
+    <div id="titleLayer"><span>48 VOICES · ONE CITY</span><h2>Touch a light.<br>Hear one memory.</h2></div>
+    <aside id="detail">
+      <button id="closeDetail">×</button><div class="detail-kicker">ISOLATED VOICE</div>
+      <h2 id="detailName">—</h2><div id="detailTrack">—</div>
+      <div id="detailGeo">—</div>
+      <p id="detailKicker"></p>
+      <div class="detail-rule"></div><p id="detailText"></p>
+      <button id="returnCity">RETURN TO THE CITY</button>
+    </aside>
+  </div>
+  <div id="hud">
+    <button id="play">▶ PLAY</button><span id="time">00:00</span>
+    <input id="seek" type="range" min="0" max="2756" step=".1" value="0">
+    <span id="duration">45:56</span>
+    <div id="volWrap"><span id="volIcon">♪</span><input id="volume" type="range" min="0" max="1" step=".01" value=".85"></div>
+    <span id="status">Checking 48 tracks…</span>
+  </div>
+</section>
+
+<section id="historyPage" class="view text">
+  <button class="backBtn" data-view="mainMenu">← Main Menu</button>
+  <h2>1945 · Memory · Reconstruction</h2>
+  <p id="historyIntro" class="lede"></p>
+  <p id="historyRaid"></p>
+  <div class="historyImg" id="histImg0"></div>
+  <p id="historyToll"></p>
+  <div class="historyImg" id="histImg1"></div>
+  <p id="historyCity"></p>
+  <p id="historyAftermath"></p>
+  <div class="historyImg" id="histImg2"></div>
+</section>
+
+<section id="storyPage" class="view text">
+  <button class="backBtn" data-view="mainMenu">← Main Menu</button>
+  <h2>The Story</h2>
+  <h3>Who was H. Johannes Wallmann?</h3>
+  <p id="wallmannBio"></p>
+  <h3>How Glockenrequiem Dresden came to be</h3>
+  <p id="wallmannOrigin"></p>
+  <p id="wallmannPremiere"></p>
+  <h3>Why bells</h3>
+  <p id="wallmannMeaning"></p>
+</section>
+
+<section id="moreInfoPage" class="view text">
+  <button class="backBtn" data-view="mainMenu">← Main Menu</button>
+  <h2>More Info</h2>
+  <h3>Why I built this</h3>
+  <p id="personalStory" class="lede"></p>
+  <h3>Why this installation</h3>
+  <p id="motivationWhy"></p>
+  <p id="motivationGlass"></p>
+  <h3>Mapping the city honestly</h3>
+  <p id="motivationMap"></p>
+  <h3>Sound driving light</h3>
+  <p id="motivationSound"></p>
+  <h3>From remembrance toward peace</h3>
+  <p id="peaceText"></p>
+  <h3>Archive &amp; research</h3>
+  <p id="archiveText"></p>
+  <p class="note">The handwritten scores are not displayed in this public interface.</p>
+  <div id="sources"></div>
+</section>
+
+<section id="contactPage" class="view text">
+  <button class="backBtn" data-view="mainMenu">← Main Menu</button>
+  <h2>Contact &amp; Support</h2>
+  <p class="lede">Wallmann directed the proceeds from his own recording of this piece outward, toward children's aid, rather than only inward toward Dresden's own reconstruction. In that spirit, here is where to direct support — both to people affected by war today, and to the long, ongoing work of rebuilding what war destroys.</p>
+  <div id="contactList"></div>
+</section>
+
+</main><script src="src/app.js"></script></body></html>

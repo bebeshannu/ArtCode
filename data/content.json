@@ -1,0 +1,98 @@
+{
+  "title": "Echoes of Memory — Dresden Bell Requiem (1995)",
+  "sections": {
+    "requiem": "A city-wide sound composition by H. Johannes Wallmann, remembered here through the surviving synchronized multitrack recording. This installation uses archival track-to-ensemble labels and audio-reactive interpretation; it does not claim to reconstruct handwritten score events.",
+    "history": "Dresden was devastated by Allied air raids in February 1945. The installation frames remembrance within the wider history of war, civilian suffering, National Socialism and the Second World War, and connects memory with responsibility for peace.",
+    "archive": "Research materials and access were supported by SLUB Dresden. Original archival scores remain outside the public exhibition interface unless explicit permission is available.",
+    "credits": "Archival research/materials: SLUB Dresden. Composition: H. Johannes Wallmann. Interactive interpretation: student Art & Code project.",
+
+    "historyIntro": "This installation remembers a single night in a much longer war. What follows is offered as context, not as the whole story — Dresden's suffering was real, and it took place within a war that Nazi Germany started, that Nazi Germany waged with the Holocaust at its center, and that ended only through the total defeat of that regime. Holding both of those truths at once is the point.",
+    "historyRaid": "On the night of 13–14 February 1945, in the closing months of the Second World War, the Royal Air Force and the United States Army Air Forces carried out a series of bombing raids on Dresden, then a city of roughly 650,000 people swollen with refugees fleeing the advancing Eastern Front. Two RAF waves dropped high-explosive and incendiary bombs a few hours apart, deliberately timed so the second wave would strike rescue workers responding to the first. A firestorm — winds strong enough to uproot trees, temperatures high enough to melt asphalt and glass — consumed the historic city center. A third, American raid followed the next day.",
+    "historyToll": "The death toll became one of the most politically distorted numbers of the war. Nazi propaganda inflated it for domestic effect within weeks of the raid; decades later, neo-Nazi groups revived and further inflated those same figures, sometimes into the hundreds of thousands, to relativize German crimes during the Holocaust. In 2010, an independent commission of historians convened by the City of Dresden published a definitive study: roughly 25,000 people were killed. That is the figure this installation uses, and it is already an immense loss — the commission's real achievement was separating a documented tragedy from a manufactured myth.",
+    "historyCity": "The raid destroyed roughly 15 square miles of the historic center — a baroque cityscape often compared to Florence for its density of churches, palaces, and museums. The Frauenkirche's sandstone dome, one of the largest in Europe, survived the firestorm itself but collapsed two days later when the intense heat had already fractured its structure. Kreuzkirche, the Semperoper, the Zwinger, and dozens of parish churches — many of the same churches whose bells you can hear in this installation — burned or fell.",
+    "historyAftermath": "Dresden fell inside the Soviet occupation zone and then East Germany, where the ruins were treated ambivalently: some rebuilt as symbols of a new socialist city, others — the Frauenkirche foremost among them — left as rubble, a deliberate war memorial and, later, a Cold War argument. It was not until German reunification that reconstruction of the Frauenkirche began in earnest, in 1994, funded substantially by private and international donations, including from Britain and the United States. It reopened in 2005, sixty years after it fell. Its new dome cross was forged by a British silversmith whose father had flown in the raids — a small, specific act of repair that this installation tries to stand in the same tradition as.",
+
+    "wallmannBio": "H. Johannes Wallmann was born in Leipzig in 1952 and grew up in Dresden, where — by his own account — the sound of church bells carrying across the city as a child shaped his ear permanently. He studied music in Weimar, where he co-founded a new-music collective that East German state security files describe as producing work of \"content and expression hostile to the state.\" He emigrated to West Germany in 1988, a year before the Wall fell, and has spent the decades since developing what he calls Integral Art — large-scale compositions that treat landscape, architecture, and civic space itself as instruments, dissolving the line between music, place, and public memory.",
+    "wallmannOrigin": "In 1995, for the 50th anniversary of the bombing, Wallmann composed Glockenrequiem Dresden — a single composition written for 129 real church bells in 47 towers across the city, performed live and simultaneously rather than recorded and played back. Nothing like it had been attempted at that scale. A 332-page score notated bell entrances to the second. Around 90 volunteer bell-ringers, coordinated by radio-synchronized clocks, executed it from towers scattered across 226 square kilometers. Fifty-two telephone lines, installed by Deutsche Telekom for the occasion, carried live audio from distributed bell towers back to a central mixing console at the Dresden Hochschule für Musik — the same technical backbone, in spirit, that this installation's 48-track archival recording descends from.",
+    "wallmannPremiere": "The piece premiered on 12 February 1995, running from 21:30 to 22:12. Between thirty and sixty thousand people gathered at the Frauenkirche ruins and across the city to listen in person; DeutschlandRadio Kultur, MDR, BBC London, and Radio Washington D.C. carried it live, reaching an international audience Wallmann estimated in the hundreds of thousands. The bells were organized into four directional groups radiating out from the center, so that depending on where you stood, you heard a different city — the same structure this installation tries to preserve by mapping each voice to its real geographic position rather than an arbitrary grid.",
+    "wallmannMeaning": "Wallmann has been explicit about why bells: for centuries, church bells were also a wartime material reserve, repeatedly melted down into cannon and, in the twentieth century, bombs. Most of Dresden's own bells were removed during the war and sent to a collection yard in Hamburg — the so-called \"bell cemetery\" — awaiting exactly that fate when the war ended before they could be destroyed. Ringing them, forty-seven towers at once, was Wallmann's answer to that history: an instrument of war, spared, returned to its original purpose. He dedicated the piece to children \"as bearers of the future,\" framed by a line from Anne Frank on the transformation the world still owes itself. Proceeds from the archival recording went to terre des hommes, an international children's aid organization — a choice Wallmann made deliberately, directing support outward toward the living rather than only inward toward the city's own reconstruction.",
+
+    "personalStory": "I arrived in Dresden with very little knowledge of its history. One evening during exam season, I was studying in the SLUB reading hall when, at 9:45pm on the 13th of February, the Glockenrequiem recording began playing through the building. At first I was annoyed — it felt like noise breaking my concentration. But I stopped, listened, and looked it up right there while it was still playing. Once I understood what I was hearing, it moved me in a way I didn't expect. It was a reminder to pause: how small my exam stress was next to what the people in this city lived through eighty years earlier. The more I read — 129 bells, 47 churches, a single score coordinating all of it — the more it struck me as an act of collective effort as much as an act of memory. People still form a human chain around the old city on that night every year. That combination — noise that turns out to be meaning, the moment you actually listen — is where this project comes from, and it's the experience I wanted this installation to give someone else: it can sound like chaos until you understand what the bells are actually carrying, and then it asks you to stop and sit with it.",
+    "motivationWhy": "The 48 tracks behind this installation are a genuine archival artifact: a synchronized multitrack recording of Wallmann's piece, labeled by the churches and technical relay channels that fed it in 1995. Most of what you can do with an archival recording is play it back. We wanted to build something that made its structure legible instead — so that the fact of forty-eight separate places, ringing together, was something you could see and feel, not just infer from a program note.",
+    "motivationGlass": "Stained glass gave us a form that already carries the right meaning without needing to be explained: a rose window is literally many separate pieces of glass, held by a lead structure, that only reads as one image when light passes through all of them together. That is close to a precise description of what Wallmann's piece is — forty-seven independent bell towers that only become \"Glockenrequiem Dresden\" in combination. A shattered window carries the second half of the meaning: Dresden's churches were shattered by exactly this kind of event, and are, like the Frauenkirche, still being pieced back together.",
+    "motivationMap": "The 48 fragments are not arranged decoratively. Each one sits at that church's real position in Dresden, projected from its actual latitude and longitude, so a church that stood north of the Elbe in 1995 still sits north of the Elbe on screen — the geography of the piece is preserved, not just its list of names. Where we could not confirm a location with confidence, the installation says so rather than inventing one; a handful of channels are marked approximate, and one — a technical relay track we could not identify in any surviving documentation — is marked unconfirmed rather than assigned a false church. We think that kind of honesty matters more here than it would in most software.",
+    "motivationSound": "Sound drives everything visible: a fragment brightens when its bell actually strikes, decays the way a real bell's resonance decays, and sends a ripple outward that can collide with another church's ripple if they ring at close to the same moment. Nothing here is a pre-programmed animation standing in for the audio — the light is a direct, real-time reading of forty-eight live audio signals. When you isolate one voice, the other forty-seven don't stop; they keep playing, muted, at the same position in time, so that returning to the full view is a genuine return, not a restart.",
+
+    "peace": "Memory is not only an act of looking backward. Dresden's bells were spared from being melted into weapons and rang instead as an act of collective mourning and repair; the same city that was destroyed by an act of mass violence has spent eighty years arguing, honestly, about how to remember it without either minimizing the harm done to it or using that harm to minimize the harm Germany did to others. This installation asks the same question at a much smaller scale: whether listening together — to forty-eight separate voices, honestly labeled, refusing to resolve into a single simple story — can itself be a form of responsibility toward peace."
+  },
+  "historyImages": [
+    {
+      "src": "assets/history/dresden-1945-ruins-1.jpg",
+      "caption": "The destroyed city center of Dresden, photographed in 1945.",
+      "credit": "Bundesarchiv, Bild 183-Z0309-310 / G. Beyer / CC BY-SA 3.0 DE"
+    },
+    {
+      "src": "assets/history/dresden-1945-ruins-2.jpg",
+      "caption": "Dresden's ruined city center, photographed in July 1951 — reconstruction had barely begun six years after the raid.",
+      "credit": "Bundesarchiv, Bild 183-11408-0004 / CC BY-SA 3.0 DE"
+    },
+    {
+      "src": "assets/history/frauenkirche-rebuilt.jpg",
+      "caption": "The Frauenkirche, rebuilt and reconsecrated in 2005 using original stones recovered from the rubble wherever possible.",
+      "credit": "Photo: Fred Romero / CC BY 2.0"
+    }
+  ],
+  "contacts": [
+    {
+      "name": "terre des hommes",
+      "blurb": "The international children's-aid organization that received the proceeds from Wallmann's own Glockenrequiem recording in 1995 — the direct historical precedent for this page.",
+      "url": "https://www.tdh.de/en/"
+    },
+    {
+      "name": "International Committee of the Red Cross (ICRC)",
+      "blurb": "Neutral, independent humanitarian protection and assistance for people affected by armed conflict, worldwide.",
+      "url": "https://www.icrc.org/en"
+    },
+    {
+      "name": "UNHCR, the UN Refugee Agency",
+      "blurb": "Emergency shelter, protection, and resettlement support for refugees and people displaced by war.",
+      "url": "https://www.unhcr.org/"
+    },
+    {
+      "name": "Médecins Sans Frontières / Doctors Without Borders",
+      "blurb": "Emergency medical care delivered directly in conflict zones and humanitarian crises.",
+      "url": "https://www.doctorswithoutborders.org/"
+    },
+    {
+      "name": "Stiftung Frauenkirche Dresden",
+      "blurb": "The foundation that rebuilt the Frauenkirche after reunification and now maintains it — the clearest local example of what long-term reconstruction looks like.",
+      "url": "https://www.frauenkirche-dresden.de/en/donations"
+    }
+  ],
+  "sources": [
+    {
+      "label": "SLUB — Glockenrequiem Dresden, 2026 remembrance article",
+      "url": "https://blog.slub-dresden.de/en/slublog/2026/02/12/glockenrequiem-dresden-eine-mahnung-zum-frieden-anlaesslich-der-81-jaehrigen-wiederkehr-des-13-februar-1945"
+    },
+    {
+      "label": "German Historical Museum — Bombing of Dresden 1945",
+      "url": "https://www.dhm.de/lemo/kapitel/zweiter-weltkrieg/kriegsverlauf/dresden"
+    },
+    {
+      "label": "City of Dresden — Historian Commission report",
+      "url": "https://www.dresden.de/media/pdf/infoblaetter/Historikerkommission_Dresden1945_Abschlussbericht_V1_14a.pdf"
+    },
+    {
+      "label": "SLUB press images — Johannes Wallmann collection / COMMON SENSE",
+      "url": "https://www.slub-dresden.de/ueber-uns/presse/pressebilder-zur-ausstellung-common-sense-der-gemeinsame-nenner"
+    },
+    {
+      "label": "Integral-Art — Glockenrequiem Dresden project page",
+      "url": "https://www.integralart.de/content/projekte/glocken-requiem-dresden"
+    },
+    {
+      "label": "H. Johannes Wallmann — biography (Integral-Art)",
+      "url": "https://www.integralart.de/repository/media/Johannes-Wallmann-en.pdf"
+    }
+  ]
+}
