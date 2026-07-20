@@ -1,0 +1,138 @@
+
+/* ---- self-hosted type (no CDN dependency, works fully offline) ----
+   Playfair Display — headings/titles (display serif, strong at large sizes)
+   EB Garamond — long-form prose and quotes (classic book serif)
+   Inter — UI chrome: buttons, nav, HUD, labels (clean modern sans) */
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:400 700;font-display:swap;src:url('../assets/fonts/playfair-regular-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:400 700;font-display:swap;src:url('../assets/fonts/playfair-regular-latinext.woff2') format('woff2');unicode-range:U+0100-024F,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Playfair Display';font-style:italic;font-weight:400 700;font-display:swap;src:url('../assets/fonts/playfair-italic-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Playfair Display';font-style:italic;font-weight:400 700;font-display:swap;src:url('../assets/fonts/playfair-italic-latinext.woff2') format('woff2');unicode-range:U+0100-024F,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'EB Garamond';font-style:normal;font-weight:400 600;font-display:swap;src:url('../assets/fonts/ebgaramond-regular-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'EB Garamond';font-style:normal;font-weight:400 600;font-display:swap;src:url('../assets/fonts/ebgaramond-regular-latinext.woff2') format('woff2');unicode-range:U+0100-024F,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'EB Garamond';font-style:italic;font-weight:400 600;font-display:swap;src:url('../assets/fonts/ebgaramond-italic-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'EB Garamond';font-style:italic;font-weight:400 600;font-display:swap;src:url('../assets/fonts/ebgaramond-italic-latinext.woff2') format('woff2');unicode-range:U+0100-024F,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Inter';font-style:normal;font-weight:400 700;font-display:swap;src:url('../assets/fonts/inter-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Inter';font-style:normal;font-weight:400 700;font-display:swap;src:url('../assets/fonts/inter-latinext.woff2') format('woff2');unicode-range:U+0100-024F,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+
+:root{
+  --font-display:'Playfair Display',Georgia,serif;
+  --font-serif:'EB Garamond',Georgia,serif;
+  --font-ui:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
+  --radius-sm:8px;--radius-md:14px;--radius-lg:22px;
+  --bg:#0d0d0c;--fg:#eee7dc;
+  --header-bg:#111;--header-border:#302a23;--header-muted:#9d8b72;--header-muted2:#b9aa96;
+  --accent:#c49a61;--accent-border:#a98759;
+  --intro-bg1:#4a2c1a;--intro-bg2:#17120f;--intro-bg3:#090909;
+  --intro-eyebrow:#c7a977;--intro-h1:#f1e6d3;--intro-quote:#d4c2a7;
+  --btn-bg:rgba(20,16,12,.6);
+  --experience-bg:#0b0b0a;
+  --veil-mid:rgba(0,0,0,.12);--veil-out:rgba(0,0,0,.68);
+  --title-sub:#b99a70;--title-h2:#e8ddcb;
+  --detail-bg1:rgba(14,12,10,.2);--detail-bg2:rgba(14,12,10,.96);
+  --detail-track:#bda98d;--detail-geo:#83714f;--detail-rule:#6e5940;--detail-text:#cfc4b5;--detail-kicker:#e2c99a;
+  --hud-bg:#11100f;--hud-border:#3a3025;--hud-time:#c7b69e;--hud-status:#9b8971;
+  --page-bg:#171310;--page-fg:#e7ddce;--page-h3:#e2c99a;--page-lede:#c7b299;--page-note-border:#8c6841;--page-source:#d8b988;
+  --backbtn-border:#8c6841;--backbtn-fg:#c7b299;
+  --imgcaption:#b6a98e;--imgcredit:#8a7c65;
+  --card-border:#4a3a26;--card-bg:rgba(255,255,255,.04);--card-h4:#f1e6d3;--card-link:#d8b988;
+  --menu-bg1:#241a10;--menu-bg2:#0d0b09;--menu-bg3:#070605;
+  --menu-item-border:#4a3a26;--menu-item-bg:rgba(255,255,255,.02);--menu-item-hover-bg:rgba(196,154,97,.08);
+  --menu-sub:#9c8b6f;
+}
+:root[data-theme="light"]{
+  --bg:#f3ede0;--fg:#2a2015;
+  --header-bg:#fbf7ee;--header-border:#ddd0b4;--header-muted:#8a7457;--header-muted2:#6b5a3f;
+  --accent:#a9743f;--accent-border:#8a5f34;
+  --intro-bg1:#e7d2ad;--intro-bg2:#f3e6cc;--intro-bg3:#f8f1e2;
+  --intro-eyebrow:#8a6a3a;--intro-h1:#2a2015;--intro-quote:#5a4526;
+  --btn-bg:rgba(255,255,255,.55);
+  --veil-mid:rgba(0,0,0,.08);--veil-out:rgba(0,0,0,.55);
+  --hud-bg:#fbf7ee;--hud-border:#ddd0b4;--hud-time:#4a3c28;--hud-status:#8a7457;
+  --page-bg:#faf5e9;--page-fg:#211d19;--page-h3:#3a2c1a;--page-lede:#5a4a34;--page-note-border:#8c6841;--page-source:#6f4d2f;
+  --backbtn-border:#8c6841;--backbtn-fg:#5a4a34;
+  --imgcaption:#6f5f47;--imgcredit:#9c8b6f;
+  --card-border:#cabb9d;--card-bg:rgba(255,255,255,.6);--card-h4:#2e2418;--card-link:#6f4d2f;
+  --menu-bg1:#f3e6cc;--menu-bg2:#f8f1e2;--menu-bg3:#fbf7ee;
+  --menu-item-border:#d8c39c;--menu-item-bg:rgba(0,0,0,.02);--menu-item-hover-bg:rgba(169,116,63,.12);
+  --menu-sub:#8a7457;
+}
+/* The visualization stage stays dark in both themes on purpose — it's an
+   art-viewing room, not a document, and the glass only reads correctly
+   against near-black. Everything around it (menu, header, content pages)
+   fully re-themes. */
+
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(--fg);font-family:var(--font-ui)}
+button{font:inherit;color:inherit}
+h1,h2,h3{font-family:var(--font-display)}
+
+/* ---- pre-intro epigraph: dims up, holds, dims out, like a studio card ---- */
+#preIntro{position:fixed;z-index:30;inset:0;background:#050403;display:grid;place-items:center;text-align:center;padding:0 6vw;opacity:1;transition:opacity 1.4s ease}
+#preIntro.hide{opacity:0;pointer-events:none}
+#preQuote{font:italic 28px/1.6 var(--font-serif);color:#a3927a;max-width:720px;opacity:0;animation:preQuoteFade 5.5s ease forwards}
+@keyframes preQuoteFade{0%{opacity:0;transform:translateY(6px)}18%{opacity:1;transform:translateY(0)}75%{opacity:1}100%{opacity:0}}
+
+#intro{position:fixed;z-index:20;inset:0;background:radial-gradient(circle at 50% 75%,var(--intro-bg1) 0,var(--intro-bg2) 28%,var(--intro-bg3) 70%);display:grid;place-items:center;text-align:center;opacity:0;transition:opacity 1.1s ease}
+#intro.show{opacity:1}
+.intro-inner{max-width:800px}.eyebrow{letter-spacing:.28em;font-size:12px;color:var(--intro-eyebrow);font-family:var(--font-ui)}.intro-inner h1{font-weight:600;font-size:clamp(70px,9vw,150px);line-height:.78;margin:35px 0;color:var(--intro-h1)}.quote{font-family:var(--font-serif);font-style:italic;font-size:24px;color:var(--intro-quote)}
+#enter,#play,#returnCity{border:1px solid var(--accent-border);background:var(--btn-bg);padding:14px 25px;border-radius:var(--radius-sm);letter-spacing:.12em;cursor:pointer;transition:transform .2s,background .2s}
+#enter:hover,#play:hover,#returnCity:hover{transform:translateY(-1px);background:rgba(196,154,97,.18)}
+header{height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 30px;border-bottom:1px solid transparent;background:transparent;position:relative;z-index:10;transition:opacity .3s,background .3s,border-color .3s}
+body:not(.onMenu) header{background:var(--header-bg);border-bottom-color:var(--header-border)}
+header small{display:block;color:var(--header-muted);margin-top:4px}
+/* The visualization stage is a dark room in both themes — re-themed light
+   chrome (header AND the HUD bar/detail panel below) directly around a
+   near-black canvas reads as broken, not intentional. Re-declaring the same
+   variables at this scope forces every var()-based rule under it (header,
+   #hud, #detail, #seek, #volume, ...) back to fixed dark values without
+   needing a parallel set of manual per-element overrides.  */
+body.onViz{
+  --header-bg:#111;--header-border:#302a23;--header-muted:#9d8b72;--header-muted2:#b9aa96;
+  --hud-bg:#11100f;--hud-border:#3a3025;--hud-time:#c7b69e;--hud-status:#9b8971;
+  --accent:#c49a61;--accent-border:#a98759;--btn-bg:rgba(20,16,12,.6);
+  --menu-item-border:#4a3a26;
+  --veil-mid:rgba(0,0,0,.12);--veil-out:rgba(0,0,0,.68);
+  --fg:#eee7dc;
+}
+nav{display:flex;align-items:center;gap:12px}
+nav button{background:none;border:1px solid var(--menu-item-border);border-radius:var(--radius-sm);padding:8px 16px;letter-spacing:.08em;color:var(--header-muted2);cursor:pointer;transition:border-color .2s,background .2s}
+nav button:hover{border-color:var(--accent)}
+#themeToggle{width:38px;height:38px;padding:0;display:grid;place-items:center;font-size:16px}
+body.onMenu #menuBtn{opacity:0;pointer-events:none}
+
+main{height:calc(100% - 72px);position:relative;perspective:1200px}
+/* Same cubic-bezier + blur+scale language as the fragment-focus zoom in the
+   visualization, so moving between menu/pages/viz feels like one consistent
+   interaction rather than two different apps stitched together. */
+.view{position:absolute;inset:0;height:100%;opacity:0;pointer-events:none;transform:scale(1.045) translateY(14px);filter:blur(10px);transition:opacity .6s cubic-bezier(.2,.8,.2,1),transform .7s cubic-bezier(.2,.8,.2,1),filter .6s cubic-bezier(.2,.8,.2,1)}
+.view.active{opacity:1;pointer-events:auto;transform:scale(1) translateY(0);filter:blur(0)}
+.menu{display:flex}
+#experience{position:relative;background:var(--experience-bg)}
+#scene{position:absolute;inset:0 0 76px;overflow:hidden}#art{position:absolute;inset:0;width:100%;height:100%;cursor:pointer;touch-action:none}
+#veil{position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at center,transparent 0,var(--veil-mid) 55%,var(--veil-out) 100%);transition:.7s}
+#titleLayer{position:absolute;left:5vw;top:8vh;pointer-events:none;transition:.5s}#titleLayer span,.detail-kicker{font-size:11px;letter-spacing:.25em;color:var(--title-sub);font-family:var(--font-ui)}#titleLayer h2{font:600 clamp(34px,4vw,65px)/1.02 var(--font-display);margin:12px 0;color:var(--title-h2)}#scene.focus #titleLayer{opacity:0;transform:translateY(-20px)}
+#detail{position:absolute;right:-480px;top:0;width:min(430px,38vw);height:100%;padding:10vh 42px;background:linear-gradient(90deg,var(--detail-bg1),var(--detail-bg2) 18%);transition:right .8s cubic-bezier(.2,.8,.2,1);z-index:5}#scene.focus #detail{right:0}#detail h2{font:600 42px var(--font-display);margin:14px 0 6px}#detailTrack{color:var(--detail-track);font-family:var(--font-ui)}#detailGeo{color:var(--detail-geo);font-size:11px;letter-spacing:.14em;margin-top:8px;text-transform:uppercase;font-family:var(--font-ui)}
+#detailKicker{font:italic 17px/1.5 var(--font-serif);color:var(--detail-kicker);margin:16px 0 0}
+.detail-rule{height:1px;background:var(--detail-rule);margin:24px 0}#detailText{font-family:var(--font-serif);font-size:17px;line-height:1.7;color:var(--detail-text)}#closeDetail{position:absolute;right:25px;top:25px;background:none;border:0;border-radius:50%;width:40px;height:40px;font-size:28px;cursor:pointer}#closeDetail:hover{background:rgba(255,255,255,.08)}
+#returnCity{margin-top:25px}
+#hud{height:76px;position:absolute;bottom:0;left:0;right:0;display:flex;align-items:center;gap:15px;padding:0 28px;background:var(--hud-bg);border-top:1px solid var(--hud-border);z-index:9}
+#play{border-radius:var(--radius-sm)}
+#seek{flex:1;accent-color:var(--accent);height:35px}#time,#duration{font-variant-numeric:tabular-nums;color:var(--hud-time)}#status{font-size:11px;color:var(--hud-status);min-width:145px}
+#volWrap{display:flex;align-items:center;gap:8px;padding-left:10px;border-left:1px solid var(--hud-border)}#volIcon{color:var(--header-muted2);font-size:15px}#volume{width:100px;accent-color:var(--accent);height:24px}
+.text{overflow:auto;padding:8vh 12vw;background:var(--page-bg);color:var(--page-fg);transition:background .3s,color .3s}.text h2{font:600 55px var(--font-display)}.text h3{font:600 28px var(--font-display);margin:44px 0 6px;color:var(--page-h3)}.text p{max-width:850px;font:19px/1.75 var(--font-serif)}.text p.lede{font-style:italic;color:var(--page-lede);font-size:22px}.note{padding:18px;border-left:3px solid var(--page-note-border);border-radius:0 var(--radius-sm) var(--radius-sm) 0}#sources a{display:block;color:var(--page-source);margin:10px 0;font-family:var(--font-ui)}
+.backBtn{border:1px solid var(--backbtn-border);border-radius:var(--radius-sm);background:none;color:var(--backbtn-fg);padding:10px 20px;letter-spacing:.1em;cursor:pointer;font-size:13px;margin-bottom:30px;transition:background .2s;font-family:var(--font-ui)}
+.backBtn:hover{background:rgba(140,104,65,.12)}
+.historyImg{max-width:850px;margin:30px 0}.historyImg img{width:100%;display:block;border-radius:var(--radius-md)}.historyImg .imgCaption{display:block;font:italic 15px/1.5 var(--font-serif);color:var(--imgcaption);margin-top:8px}.historyImg .imgCredit{display:block;font-size:11px;letter-spacing:.05em;color:var(--imgcredit);margin-top:2px;font-family:var(--font-ui)}
+#contactList{max-width:850px;display:flex;flex-direction:column;gap:22px;margin-top:36px}.contactCard{border:1px solid var(--card-border);border-radius:var(--radius-md);padding:22px 26px;background:var(--card-bg);transition:border-color .2s}.contactCard:hover{border-color:var(--accent)}.contactCard h4{font:600 24px var(--font-display);margin:0 0 8px;color:var(--card-h4)}.contactCard p{font:16px/1.6 var(--font-serif);margin:0 0 12px;max-width:none}.contactCard a{color:var(--card-link);font-weight:600;letter-spacing:.04em;text-decoration:none;border-bottom:1px solid var(--backbtn-border);font-family:var(--font-ui)}
+
+/* ---- main menu ---- */
+.menu{background:radial-gradient(circle at 50% 30%,var(--menu-bg1) 0,var(--menu-bg2) 60%,var(--menu-bg3) 100%);align-items:center;justify-content:center;transition:background .3s}
+.menu-inner{width:min(720px,90vw);text-align:center;padding:0 20px}
+.menu .eyebrow{display:block;font-family:var(--font-ui)}
+.menu-inner h1{font:600 clamp(40px,6vw,80px)/1 var(--font-display);color:var(--fg);margin:20px 0 50px}
+.menu-nav{display:flex;flex-direction:column;align-items:stretch;gap:14px;width:100%}
+.menu-item{display:flex;flex-direction:column;align-items:flex-start;gap:4px;text-align:left;width:100%;border:1px solid var(--menu-item-border);border-radius:var(--radius-md);background:var(--menu-item-bg);padding:20px 26px;cursor:pointer;transition:border-color .25s,background .25s,transform .2s}
+.menu-item:hover{border-color:var(--accent);background:var(--menu-item-hover-bg);transform:translateY(-2px)}
+.menu-item-title{font:600 24px var(--font-display);color:var(--fg)}
+.menu-item-sub{font-size:13px;letter-spacing:.05em;color:var(--menu-sub);font-family:var(--font-ui)}
+.menu-item.featured{border-color:var(--accent-border);background:var(--menu-item-hover-bg)}
+.menu-item.featured .menu-item-title{color:var(--fg)}
